@@ -61,5 +61,4 @@ You can now paste the snippet in your VSCode user snippets file.
 
 ```bash
 pip install pyperclip
-...
 ```
