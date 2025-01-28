@@ -9,7 +9,6 @@
 * 変換後のスニペットはクリップボードにコピーされます。
 
 ### 使用方法
-### 使用方法
 1. `snippet_converter.py`を実行します。
 ```bash
 python snippet_converter.py
