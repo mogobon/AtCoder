@@ -2,8 +2,7 @@
 
 
 ## Snippet Converter
-* お遊びで作ったコードをスニペット形式に変換してくれるプログラムで
-このようにすることで、プロジェクトの使い方がより明確になります。
+* お遊びで作ったコードをスニペット形式に変換してくれるプログラムです。
 
 
 ### `snippet_converter.py`:
@@ -62,5 +61,4 @@ You can now paste the snippet in your VSCode user snippets file.
 
 ```bash
 pip install pyperclip
-...
 ```
