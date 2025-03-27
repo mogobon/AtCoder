@@ -11,11 +11,6 @@
 
 1. リポジトリをクローン（あるいはスクリプトをコピーしてローカルに保存）します:
 
-    ```bash
-    git clone https://github.com/mogobon/adt2abc_url_converter.git
-    cd adt2abc_url_converter
-    ```
-
 2. 必要な依存関係をインストールします:
 
     ```bash
