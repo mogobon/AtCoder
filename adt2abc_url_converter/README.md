@@ -9,7 +9,7 @@
 
 ## インストール
 
-1. リポジトリをクローンします:
+1. リポジトリをクローン（あるいはスクリプトをコピーしてローカルに保存）します:
 
     ```bash
     git clone https://github.com/yourusername/adt2abc_url_converter.git
