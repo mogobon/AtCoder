@@ -27,7 +27,7 @@
 1. アプリケーションを実行します:
 
     ```bash
-    python hoge.py
+    python adt2abc_url_converter.py
     ```
 
 2. 画面の指示に従ってURLを変換してください。
