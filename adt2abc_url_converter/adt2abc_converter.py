@@ -45,7 +45,7 @@ class URLConverterApp(QWidget):
         # 結果ラベル
         self.result_label = QLabel("")
         self.result_label.setFont(QFont("Arial", 14))
-        self.result_label.setStyleSheet("color: blue;")
+        self.result_label.setStyleSheet("color: white;")
         self.result_label.setTextInteractionFlags(Qt.TextSelectableByMouse)  # 左クリックで選択可能にする
         layout.addWidget(self.result_label)
 

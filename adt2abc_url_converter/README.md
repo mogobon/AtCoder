@@ -1,6 +1,6 @@
 # adt2abc_url_converter
 
-このプロジェクトは、PyQt5を使用してURLを変換するためのユーティリティツールです。
+このプロジェクトは、PyQt5を使用して、ADTのURLをABCのそれに変換するためのお遊びで作ったユーティリティツールです。
 
 ## 必要条件
 
@@ -9,7 +9,7 @@
 
 ## インストール
 
-1. リポジトリをクローンします:
+1. リポジトリをクローン（あるいはスクリプトをコピーしてローカルに保存）します:
 
     ```bash
     git clone https://github.com/yourusername/adt2abc_url_converter.git
@@ -27,7 +27,7 @@
 1. アプリケーションを実行します:
 
     ```bash
-    python hoge.py
+    python adt2abc_url_converter.py
     ```
 
 2. 画面の指示に従ってURLを変換してください。
