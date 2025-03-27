@@ -1,6 +1,6 @@
 # adt2abc_url_converter
 
-PyQt5を使用して、ADTの問題/解説URLをABCのそれに変換するためのお遊びで作ったユーティリティツールです。
+PyQt5を使用して、ADTの問題/解説URLをABCのそれに変換するためのツールです。
 
 ## 必要条件
 
