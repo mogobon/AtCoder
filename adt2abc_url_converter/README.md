@@ -1,20 +1,15 @@
 # adt2abc_url_converter
 
-このプロジェクトは、PyQt5を使用して、ADTの問題/解説URLをABCのそれに変換するためのお遊びで作ったユーティリティツールです。
+PyQt5を使用して、ADTの問題/解説URLをABCのそれに変換するためのツールです。
 
-## 必要条件
+## 動作に必要な環境
 
 - Python 3.8以上
-- PyQt5
+- PyQt5をインストール済み
 
 ## インストール
 
 1. リポジトリをクローン（あるいはスクリプトをコピーしてローカルに保存）します:
-
-    ```bash
-    git clone https://github.com/yourusername/adt2abc_url_converter.git
-    cd adt2abc_url_converter
-    ```
 
 2. 必要な依存関係をインストールします:
 
