@@ -1,48 +1,36 @@
+# Verify: https://atcoder.jp/contests/abc481/submissions/80396791
 # 偏角ソート（正のx軸を始点に反時計回り）
 # ABC481 E: https://atcoder.jp/contests/abc481/tasks/abc481_e
-# 下部は同問題の使用例。pの各点は原点ではなく、
-# 異なる2点と原点が一直線上に並ばないことを前提とする。
 
 import sys
 
 
-def quick_sort(a, less):
-    """less(a, b)がTrueならaを先に置く。aを直接変更し、Noneを返す。
-    lessは狭義の順序（自分自身との比較はFalse）を満たすこと。
-    平均O(N log N)、最悪O(N^2)。追加領域O(log N)。不安定ソート。
-    """
-    if len(a) < 2:
+def quick_sort(lst, comparision, left=0, right=-1):
+    if len(lst) == 0:
         return
+    if right == -1:
+        right = len(lst) - 1
 
-    stack = [(0, len(a) - 1)]
+    que = [(left, right)]
+    while que:
+        i, j = que.pop()
+        left, right = i, j
+        dpivot = lst[(i + j) // 2]
 
-    while stack:
-        l, r = stack.pop()
+        while i <= j:
+            while comparision(lst[i], dpivot) < 0:
+                i += 1
+            while comparision(dpivot, lst[j]) < 0:
+                j -= 1
+            if i <= j:
+                lst[i], lst[j] = lst[j], lst[i]
+                i += 1
+                j -= 1
 
-        while l < r:
-            pivot = a[(l + r) // 2]
-            i, j = l, r
-
-            while i <= j:
-                while less(a[i], pivot):
-                    i += 1
-                while less(pivot, a[j]):
-                    j -= 1
-
-                if i <= j:
-                    a[i], a[j] = a[j], a[i]
-                    i += 1
-                    j -= 1
-
-            # 大きい側を保留し、小さい側を先に処理する
-            if j - l < r - i:
-                if i < r:
-                    stack.append((i, r))
-                r = j
-            else:
-                if l < j:
-                    stack.append((l, j))
-                l = i
+        if left < j:
+            que.append((left, j))
+        if i < right:
+            que.append((i, right))
 
 
 def half(p):
@@ -53,15 +41,23 @@ def half(p):
 def angle_less(a, b):
     ha = half(a)
     hb = half(b)
+
     if ha != hb:
-        return ha < hb
-    return a[0] * b[1] - a[1] * b[0] > 0
+        return -1 if ha < hb else 1
+
+    cross = a[0] * b[1] - a[1] * b[0]
+
+    if cross > 0:
+        return -1
+    if cross < 0:
+        return 1
+    return 0
 
 
 def solve(p):
     quick_sort(p, angle_less)
     n = len(p)
-    p += p  # 360度をまたぐ区間も扱う
+    p += p
 
     ans = 0
     r = 0
