@@ -1,3 +1,4 @@
+# https://github.com/mogobon/AtCoder/blob/main/algo/binary_search/nibutan.py
 def nibutan_u(y, d):
     """f(mid)>=dの境界の元を探す二分探索"""
     def f(x): return # <関数の式> #
