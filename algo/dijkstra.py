@@ -1,3 +1,4 @@
+# https://github.com/mogobon/AtCoder/blob/main/algo/dijkstra.py
 
 # Verify https://judge.yosupo.jp/submission/277247
 def dijkstra(edge: list[set[tuple[int, int]]], s: int) -> tuple[list[int], list[int]]:
