@@ -1,3 +1,4 @@
+# https://github.com/mogobon/AtCoder/blob/main/algo/RLE.py
 # RLE暗号文を出力するだけ
 # s =input()
 # n = len(s)
