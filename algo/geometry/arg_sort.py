@@ -1,3 +1,4 @@
+# https://github.com/mogobon/AtCoder/blob/main/algo/geometry/arg_sort.py
 # Verify: https://atcoder.jp/contests/abc481/submissions/80396791
 # 偏角ソート（正のx軸を始点に反時計回り）
 # ABC481 E: https://atcoder.jp/contests/abc481/tasks/abc481_e
