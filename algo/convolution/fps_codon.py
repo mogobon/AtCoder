@@ -1,3 +1,4 @@
+# https://github.com/mogobon/AtCoder/blob/main/algo/convolution/fps_codon.py
 # Codon FPS library (998244353)
 # Tested with Codon 0.19.0, Linux x86_64, release build.
 # Coefficients are in ascending order and normalized to [0, MOD).
