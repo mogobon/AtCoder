@@ -1,3 +1,4 @@
+# https://github.com/mogobon/AtCoder/blob/main/algo/BinaryTrie.py
 """
 instance
 5 3
